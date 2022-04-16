@@ -1,0 +1,29 @@
+largest = None
+smallest = None
+num = 0
+tot = 0
+while True:
+      number = input("Enter a number: ')
+      if number == 'done':
+              break
+      if largest == None and smallest == None:
+              largest = number
+              smallest = number
+      if largest == None or number > largest:
+              largest = number
+      if smallest == None or number < smallest:
+              smallest = number
+      try:
+          num1= float(number)
+      except:
+          print  ('invalid input')
+                 continue
+          
+       num = num + 1
+       tot = tot + num1
+Print ('All done')
+Print ('total number: ', tot)
+Print ('number count: ', num)
+Print ('average number: ', tot/num)
+Print ('largest number: ', largest)
+Print ('smallest number: ', smallest)
